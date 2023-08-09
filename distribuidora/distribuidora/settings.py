@@ -51,12 +51,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'distribuidora.urls'
 
-import os
-
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'distr/templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,15 +76,10 @@ WSGI_APPLICATION = 'distribuidora.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'distribuidora',
-        'USER': 'mauro',
-        'PASSWORD': 'bananas',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
         'OPTIONS': {
             'read_default_file': '/etc/mysql/my.cnf',
-            'init_command': 'SET default_storage_engine=INNODB,sql_mode="STRICT_TRANS_TABLES"',
-            'isolation_level': 'read committed',
+            'init_command': 'SET default_storage_engine=INNODB,sql_mode='STRICT_TRANS_TABLES'",
+            'isolation_level': 'read committed'
         }
     }
 }

@@ -6,5 +6,5 @@ class Categoria(models.Model):
 
 
 class Subcategoria(models.Model):
-    Categoria = models.ForeignKey(Categoria, models.DO_NOTHING)
+    Categoria =
     Subcategoria = models.CharField(max_length=16)
