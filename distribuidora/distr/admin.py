@@ -62,5 +62,4 @@ class MovimentoAdmin(admin.ModelAdmin):
         ItemInline,
     ]
 
-admin.site.register(Movimento, MovimentoAdmin
-                    )
+admin.site.register(Movimento, MovimentoAdmin)
